@@ -5,7 +5,7 @@ Console.Write("Input second number: ");
 int numB = Convert.ToInt32(Console.ReadLine());
 if (numA > numB)
 {
-    Console.Write("First number is more, and second number is less  ");
+    Console.WriteLine("First number is more, and second number is less  ");
 }
 else 
     Console.WriteLine("Second number is more, and first number is less   ");
@@ -21,17 +21,25 @@ else
   int max = num1;
   if (num1 > num2)
   {
-    Console.Write("First is maximum  ");
+    Console.WriteLine("First is maximum  ");
   }
   else 
        if (num2 > num3)
    {    
-       Console.Write("Second is maximum  ");
+       Console.WriteLine("Second is maximum  ");
    }   
     else
         if (num3 > num1)
     {
-        Console.Write("Third is maximum  ");
+        Console.WriteLine("Third is maximum  ");
     } 
 
-    
+    // Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+    Console.WriteLine("Input number: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    if (num%2 ==0)
+    {
+    Console.WriteLine("Even number ");
+    }
+    else Console.WriteLine("Not even number");
